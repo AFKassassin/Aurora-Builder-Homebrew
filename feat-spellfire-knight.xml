@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<elements>
+	<element name="Ralnihr's Reliquary" type="Source" source="Third Party" id="ID_RALNIHRS_RELIQUARY">
+		<description>
+			<p>A mounted combat class.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">RR</set>
+			<set name="url"></set>
+			<set name="image"></set>
+			<set name="third-party">true</set>
+			<set name="release">20230227</set>
+		</setters>
+	</element>
+	<element name="Spellfire Knight" type="Feat" source="Ralnihr's Reliquary" id="ID_RR_FEAT_SPELLFIRE_KNIGHT">
+		<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
+		<description>
+			<p><em>Prerequisite: Spellcasting or Pact Magic feature</em></p>
+			<p>You are one of the wielders of Spellfire, and can warp the raw weave to your bidding, granting you the following benefits:</p>
+			<ul>
+				<li>You have advantage on saving throws against spells and other magical effects.</li>
+				<li>You learn the <i>spellfire blade</i> cantrip. Your spellcasting ability for the cantrip is the same as your Spellcasting or Pact Magic feature.</li>
+			</ul>
+			<div class="reference">
+				<div element="ID_RR_SPELL_SPELLFIRE_BLADE" />
+			</div>
+		</description>
+		<sheet alt="Spellfire Blade">
+			<description>You have advantage on saving throws against spells and other magical effects.
+			You learn the spellfire blade cantrip. Your spellcasting ability for the cantrip is the same as your Spellcasting or Pact Magic feature.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_RR_SPELL_SPELLFIRE_BLADE" />
+		</rules>
+	</element>
+
+	<element name="Spellfire Blade" type="Spell" source="Ralnihr's Reliquary" id="ID_RR_SPELL_SPELLFIRE_BLADE">
+		<supports>Artificer, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects, and if the creature would make a concentration check it does so at disadvantage. Until the start of your next turn, if the target casts a spell, the target takes 1d8 force damage.</p>
+			<p class="indent">This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 force damage to the target on a hit, and the damage the target takes for casting increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).</p>
+		</description>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (5-foot radius)</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon worth at least 1 sp</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+
+</elements>

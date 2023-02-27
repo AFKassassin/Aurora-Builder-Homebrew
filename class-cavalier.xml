@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Changes need to make: Make traits+actions add at correct levels. -->
+<elements>
+	<element name="Ralnihr's Reliquary" type="Source" source="Third Party" id="ID_RALNIHRS_RELIQUARY">
+		<description>
+			<p>A mounted combat class.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">RR</set>
+			<set name="url">https://www.gmbinder.com/share/-N49MrnqD1o0F5MV_7Iy</set>
+			<set name="image">https://i.imgur.com/oKX70I4.png</set>
+			<set name="third-party">true</set>
+			<set name="release">20230227</set>
+		</setters>
+	</element>
+	<element name="Cavalier" type="Class" source="Ralnihr's Reliquary" id="ID_RR_CLASS_CAVALIER">
+		<description>
+			<p>A gleaming knight in full plate charges the enemy from atop his noble steed. His lance pierces the enemy combatant, throwing them off their feet. The horse nimbly dodges past the enemy before circling around to make another pass.</p>
+			<p class="indent">A Halfling rides atop their Giant Spider, stalking their enemies from the ceiling of a cave. The poor goblin didn't even hear them coming before they pounced, seizing the initiative. A soldier is riding atop their war mount, a Wyvern, high above the battlefield. The duo swoop down, wrecking havoc on the enemy ranks, tearing through the opposition with fervor and zeal.</p>
+			<p class="indent">Cavalry is a useful asset in combat. Mounted combat has existed nearly as long as war itself, and has evolved greatly over the expanse of time. From heavily armored units backing the flanks of legionaries, to steppe raiders raining arrows, to devastating charges of shock cavalry, mounted units can easily sway the course of a battle with intense power and speed.</p>
+			<h4>COMBAT IN UNISON</h4>
+			<p>The one thing all riders have in common is the bond they share with their mounts. A rider needs to establish their knowledge of how their mount behaves, and hone their ability to control it in tense situations. Without a mount to ride, the rider loses their edge over the enemy. A rider must take good care of their steed and protect them if possible.</p>
+			<p class="indent">A rider typically names their mounts, grooms them, and adorns them with protective barding to ensure the mount's survival.</p>
+			<h4>CREATING A CAVALIER</h4>
+			<p>As you create your cavalier, consider how they came upon their mount. Many mounts can be hard to come by, and even some of the more common ones can fetch a sizable sum. Did they find their mount's egg and has raised it since birth, gaining trust from an otherwise hostile creature? Does your cavalier come from a position of privilege, and was granted their mount by their wealthy family or lords? Was your character a soldier for an army and after defecting and becoming a deserter took their steed with them?</p>
+			<p class="indent">As well, consider what type of bond your cavalier will share with their mount. Is it just a mindless creature under your servitude? Is it more of a pet, that you interact with more closely? Maybe you even live in a symbiotic nature with your mount.</p>
+			<h5>QUICK BUILD</h5>
+			<p>You can make a mystic quickly by following these suggestions. First, make Strength your highest ability score, followed by Dexterity or Constitution. Second, choose the Soldier background. Lastly, pick Lancer as your Cavalry Wing.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a cavalier, you gain the following class features.</p>
+            <h5>HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d8 per Cavalier level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per Cavalier level after 1st</li>
+            </ul>
+            <h5>PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> Light armor, medium armor</li>
+                <li><strong>Weapons:</strong> Simple weapons, martial weapons</li>
+                <li><strong>Tools:</strong> Vehicles (Land), Vehicles (Air and Sea)</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Strength, Dexterity</li>
+                <li><strong>Skills:</strong> Choose two skills from Athletics, Animal Handling, Intimidation, Insight, Persuasion, and Survival</li>
+            </ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li><i>(a)</i> a lance or <i>(b)</i> any martial weapon</li>
+				<li><i>(a)</i> three javelins or <i>(b)</i> any two simple weapons</li>
+				<li><i>(a)</i> a chain shirt or <i>(b)</i> leather</li>
+				<li><i>(a)</i> a dungeoneer's pack or <i>(b)</i> an explorer's pack</li>
+				<li><i>(a)</i> a military saddle or <i>(b)</i> an exotic saddle</li>
+			</ul>
+			<h5 class="caption">CAVALIER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Level</td><td class="col-10">Natural Weapon Damage</td><td class="col-10">Shock and Awe</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td> 1d6</td><td> —</td><td class="left">Cavalry Wing, Advanced Training</td></tr>
+				<tr><td> 2nd</td><td> 1d6</td><td> —</td><td class="left">Fighting Style</td></tr>
+				<tr><td> 3rd</td><td> 1d6</td><td> 5</td><td class="left">Shock and Awe</td></tr>
+				<tr><td> 4th</td><td> 1d6</td><td> 5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td> 1d8</td><td> 5</td><td class="left">Cavalry Wing Feature, Extra Attack</td></tr>
+				<tr><td> 6th</td><td> 1d8</td><td>10</td><td class="left">Magical Mount</td></tr>
+				<tr><td> 7th</td><td> 1d8</td><td>10</td><td class="left">Evasion</td></tr>
+				<tr><td> 8th</td><td> 1d8</td><td>10</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td> 1d8</td><td>15</td><td class="left">Cavalry Wing Feature</td></tr>
+				<tr><td>10th</td><td> 1d8</td><td>15</td><td class="left">Skilled Rider</td></tr>
+				<tr><td>11th</td><td>1d10</td><td>15</td><td class="left">Resilience Training</td></tr>
+				<tr><td>12th</td><td>1d10</td><td>20</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>1d10</td><td>20</td><td class="left">Cavalry Wing Feature</td></tr>
+				<tr><td>14th</td><td>1d10</td><td>20</td><td class="left">Split Second Dodge</td></tr>
+				<tr><td>15th</td><td>1d10</td><td>25</td><td class="left">Skilled Strike</td></tr>
+				<tr><td>16th</td><td>1d10</td><td>25</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td> 2d6</td><td>25</td><td class="left">Resilience Training</td></tr>
+				<tr><td>18th</td><td> 2d6</td><td>30</td><td class="left">Cavalry Wing Feature</td></tr>
+				<tr><td>19th</td><td> 2d6</td><td>30</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td> 2d6</td><td>30</td><td class="left">Soul Mates</td></tr>
+			</table>
+			<div element="ID_RR_CLASS_FEATURE_CAVALIER_CAVALRY_WING" />
+			<div element="ID_RR_CLASS_FEATURE_CAVALIER_ADVANCED_TRAINING" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE" />
+			<div element="ID_RR_CLASS_FEATURE_CAVALIER_SHOCK_AND_AWE" />
+			<div element="ID_RR_CLASS_FEATURE_CAVALIER_ABILITYSCOREIMPROVEMENT" />
+			<div element="ID_RR_CLASS_FEATURE_CAVALIER_EXTRA_ATTACK" />
+			<div element="ID_RR_CLASS_FEATURE_CAVALIER_MAGICAL_MOUNT" />
+			<div element="ID_RR_CLASS_FEATURE_CAVALIER_EVASION" />
+			<div element="ID_RR_CLASS_FEATURE_CAVALIER_SKILLED_RIDER" />
+			<div element="ID_RR_CLASS_FEATURE_CAVALIER_RESILIENCE_TRAINING" />
+			<div element="ID_RR_CLASS_FEATURE_CAVALIER_SPLIT_SECOND_DODGE" />
+			<div element="ID_RR_CLASS_FEATURE_CAVALIER_SKILLED_STRIKE" />
+			<div element="ID_RR_CLASS_FEATURE_CAVALIER_SOUL_MATES" />
+		</description>
+		<sheet display="false">
+			<description>A master of mounted combat.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.gmbinder.com/share/-N49MrnqD1o0F5MV_7Iy</set>
+			<set name="short">A master of mounted combat.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+			<grant type="Proficiency" id="ID_WOTC_ERLW_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_AIR_SEA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_RR_MULTICLASS_CAVALIER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_RR_MULTICLASS_CAVALIER"/>
+			<select type="Proficiency" name="Skill Proficiency (Cavalier)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" requirements="!ID_RR_MULTICLASS_CAVALIER"/>
+			<grant type="Class Feature" id="ID_RR_CLASS_FEATURE_CAVALIER_CAVALRY_WING" level="1"/>
+			<grant type="Class Feature" id="ID_RR_CLASS_FEATURE_CAVALIER_ADVANCED_TRAINING" level="1"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE" level="2"/>
+			<grant type="Class Feature" id="ID_RR_CLASS_FEATURE_CAVALIER_SHOCK_AND_AWE" level="3"/>
+			<grant type="Class Feature" id="ID_RR_CLASS_FEATURE_CAVALIER_ABILITYSCOREIMPROVEMENT" level="4"/>
+			<grant type="Class Feature" id="ID_RR_CLASS_FEATURE_CAVALIER_EXTRA_ATTACK" level="5"/>
+			<grant type="Class Feature" id="ID_RR_CLASS_FEATURE_CAVALIER_MAGICAL_MOUNT" level="6"/>
+			<grant type="Class Feature" id="ID_RR_CLASS_FEATURE_CAVALIER_EVASION" level="7"/>
+			<grant type="Class Feature" id="ID_RR_CLASS_FEATURE_CAVALIER_SKILLED_RIDER" level="10"/>
+			<grant type="Class Feature" id="ID_RR_CLASS_FEATURE_CAVALIER_RESILIENCE_TRAINING" level="11"/>
+			<grant type="Class Feature" id="ID_RR_CLASS_FEATURE_CAVALIER_SPLIT_SECOND_DODGE" level="14"/>
+			<grant type="Class Feature" id="ID_RR_CLASS_FEATURE_CAVALIER_SKILLED_STRIKE" level="15"/>
+			<grant type="Class Feature" id="ID_RR_CLASS_FEATURE_CAVALIER_SOUL_MATES" level="20"/>
+		</rules>
+		<multiclass id="ID_RR_MULTICLASS_CAVALIER">
+			<prerequisite>Strength 13 or Dexterity 13</prerequisite>
+			<requirements>([str:13]||[dex:13])</requirements>
+			<setters>
+				<set name="sourceUrl">https://www.dandwiki.com/w/index.php?title=Wyvern_Rider_(5e_Class)&amp;oldid=1521540#Multiclassing</set>
+				<set name="multiclass proficiencies">Light armor, medium armor, simple weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+
+
+<!--_____________________________________________________________________________________________________________________________________________________________-->
+
+
+	<!-- Cavalier Class Features -->
+	<element name="Cavalry Wing" type="Class Feature" source="Ralnihr's Reliquary" id="ID_RR_CLASS_FEATURE_CAVALIER_CAVALRY_WING">
+		<description>
+			<p>At 1st level, you choose a cavalry wing which you belong to. This will determine the type of mount you ride, as well as determine some of the ways in which you fight.</p>
+			<p class="indent">Your wing grants you features at 1st level and again at 5th, 9th, 13th, and 18th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Cavalry Wing" supports="Cavalry Wing" level="1" />
+		</rules>
+	</element>
+
+	<element name="Advanced Training" type="Class Feature" source="Ralnihr's Reliquary" id="ID_RR_CLASS_FEATURE_CAVALIER_ADVANCED_TRAINING">
+		<description>
+			<p>At 1st level, if your mount has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.</p>
+			<p class="indent">In combat, the mount shares your initiative count, but it takes its turn immediately after yours. While you are mounted, you take your turns at the same time. It can move, use its reaction, and bonus action on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the mount can take any action of its choice, not just Dodge.</p>
+		</description>
+		<sheet>
+			<description>In combat, the mount shares your initiative count, but it takes its turn immediately after yours. While you are mounted, you take your turns at the same time. It can move, use its reaction, and bonus action on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the mount can take any action of its choice, not just Dodge.</description>
+		</sheet>
+ 		<!--<rules>
+     		<if cond="companion:intelligence &lt;= 5">
+      	    	<stat name="companion:intelligence" value="6" level="1"/>     BROKEN BROKEN, can't use if statements
+     		</if>
+  		</rules>-->
+	</element>
+
+	<element name="Fighting Style" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_FIGHTING_STYLE</requirements>
+		<description>
+			<p>You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<h5 class="caption">ARCHERY</h5>
+			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+			<h5 class="caption">DEFENSE</h5>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+			<h5 class="caption">DUELING</h5>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+			<h5 class="caption">GREAT WEAPON FIGHTING</h5>
+			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+			<h5 class="caption">PROTECTION</h5>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+			<h5 class="caption">TWO-WEAPON FIGHTING</h5>
+			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Fighter" level="1"/>
+		</rules>
+	</element>
+
+	<element name="Shock and Awe" type="Class Feature" source="Ralnihr's Reliquary" id="ID_RR_CLASS_FEATURE_CAVALIER_SHOCK_AND_AWE">
+		<description>
+			<p>Starting at 3rd level, whenever you or your mount deals damage to a creature, it can't take reactions until the end of your next turn.</p>
+			<p class="indent">Your mount becomes more resilient. When your mount moves, the next time it would receive damage until the start of its next turn is reduced by 5. This reduction increases when you reach certain cavalier levels, as shown in the Cavalier table.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>Whenever you or your mount deals damage to a creature, it can't take reactions until the end of your next turn.</p>
+				<p class="indent">When your mount moves, the next time it would receive damage until the start of its next turn is reduced by {{shock:damage}} damage.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="shock:damage" value="5" level="3"/>
+			<stat name="shock:damage" value="10" level="6"/>
+			<stat name="shock:damage" value="15" level="9"/>
+			<stat name="shock:damage" value="20" level="12"/>
+			<stat name="shock:damage" value="25" level="15"/>
+			<stat name="shock:damage" value="30" level="18"/>
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="Ralnihr's Reliquary" id="ID_RR_CLASS_FEATURE_CAVALIER_ABILITYSCOREIMPROVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Cavalier 4)" supports="Improvement Option,Cavalier,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Cavalier 8)" supports="Improvement Option,Cavalier,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Cavalier 12)" supports="Improvement Option,Cavalier,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Cavalier 16)" supports="Improvement Option,Cavalier,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Cavalier 19)" supports="Improvement Option,Cavalier,19" level="19" />
+		</rules>
+	</element>
+
+	<element name="Extra Attack" type="Class Feature" source="Ralnihr's Reliquary" id="ID_RR_CLASS_FEATURE_CAVALIER_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+
+	<element name="Magical Mount" type="Class Feature" source="Ralnihr's Reliquary" id="ID_RR_CLASS_FEATURE_CAVALIER_MAGICAL_MOUNT">
+		<description>
+			<p>At 6th level, both you and your mount's attacks now count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+		</description>
+		<sheet>
+			<description>You and your mount's attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Evasion" type="Class Feature" source="Ralnihr's Reliquary" id="ID_RR_CLASS_FEATURE_CAVALIER_EVASION">
+		<description>
+			<p>Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+		</description>
+		<sheet>
+			<description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+		</sheet>
+	</element>
+
+	<element name="Skilled Rider" type="Class Feature" source="Ralnihr's Reliquary" id="ID_RR_CLASS_FEATURE_CAVALIER_SKILLED_RIDER">
+		<description>
+			<p>At 10th level, you gain proficiency in the Animal Handling skill.  If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it. You add double your proficiency bonus to Vehicles (Land) and Vehicles (Air and Sea) checks.</p>
+			<p class="indent">Mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed.</p>
+		</description>
+		<sheet>
+			<description>You add double your proficiency bonus to Vehicles (Land) and Vehicles (Air and Sea) checks. Mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ANIMALHANDLING" />
+		</rules>
+	</element>
+
+	<element name="Resilience Training" type="Class Feature" source="Ralnihr's Reliquary" id="ID_RR_CLASS_FEATURE_CAVALIER_RESILIENCE_TRAINING">
+		<description>
+			<p>At 11th level, your mount has proficiency in all saving throws.</p>
+			<p class="indent">At 17th level, while your mount can see you, it has advantage on all saving throws. In addition, as long you and your wyvern can see each other, you are both immune to the frightened and charmed conditions.</p>
+		</description>
+		<sheet>
+			<description level="17">While your mount can see you, it has advantage on all saving throws. In addition, as long you and your wyvern can see each other, you are both immune to the frightened and charmed conditions.</description>
+		</sheet>
+		<rules level="11">
+			<stat name="companion:strength:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Split Second Dodge" type="Class Feature" source="Ralnihr's Reliquary" id="ID_RR_CLASS_FEATURE_CAVALIER_SPLIT_SECOND_DODGE">
+		<description>
+			<p>Starting at 14th level, whenever an attacker that your mount can see hits it with an attack, it can use its reaction to halve the attack's damage against it.</p>
+		</description>
+		<sheet>
+			<description>Whenever an attacker that your mount can see hits it with an attack, it can use its reaction to halve the attack's damage against it.</description>
+		</sheet>
+	</element>
+
+	<element name="Skilled Strike" type="Class Feature" source="Ralnihr's Reliquary" id="ID_RR_CLASS_FEATURE_CAVALIER_SKILLED_STRIKE">
+		<description>
+			<p>Beginning at 15th level, once per turn, when you make an attack while mounted, you can add your mount's Dexterity modifier to your melee weapon attack and damage rolls.</p>
+		</description>
+		<sheet>
+			<description>Once per turn, when you make an attack while mounted, you can add {{companion:dexterity:modifier}} to your melee weapon attack and damage rolls.</description>
+		</sheet>
+	</element>
+
+	<element name="Soul Mates" type="Class Feature" source="Ralnihr's Reliquary" id="ID_RR_CLASS_FEATURE_CAVALIER_SOUL_MATES">
+		<description>
+			<p>At 20th level, your bond with your mount grows nearly tangible. If you die when your mount is within 60 feet, it can sacrifice its life to restore yours.</p>
+			<p class="indent">You come back to life with hit points equal to what your mount has, and your mount dies. For the next hour, you are under the effects of the Heroism spell.</p>
+		</description>
+		<sheet>
+			<description>If you die when your mount is within 60 feet, you can come back to life with hit points equal to what your mount has, and your mount dies. For the next hour, you are under the effects of the Heroism spell.</description>
+		</sheet>
+	</element>
+
+
+<!--_____________________________________________________________________________________________________________________________________________________________-->
+
+
+	<!-- Cavalry Wing Archetype -->
+	<element name="Wyvern Knight" type="Archetype" source="Ralnihr's Reliquary" id="ID_RR_CAVALIER_ARCHETYPE_WYVERN_KNIGHT">
+		<supports>Cavalry Wing</supports>
+		<description>
+			<p>The most fearsome cavalry in a kingdom's arsenal, the dreaded Wyvern riders. Riding tamed death you crash through enemy lines.</p>
+			<div element="ID_RR_COMPANION_WYVERN_MOUNT" />
+			<div element="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_WYVERN_MOUNT"/>
+			<div element="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_KINGS_SHIELD"/>
+			<div element="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_LOOMING_FIGURE"/>
+			<div element="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_SHARP_FEATURES"/>
+			<div element="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_ADVANCE_SCOUTING"/>
+			<div element="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_DEADLY_VENOM"/>
+			<div element="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_ONSLAUGHT"/>
+		</description>
+		<sheet display="false"></sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_WYVERN_MOUNT" level="1" />
+			<grant type="Archetype Feature" id="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_KINGS_SHIELD" level="1" />
+			<grant type="Archetype Feature" id="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_LOOMING_FIGURE" level="1" />
+			<grant type="Archetype Feature" id="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_SHARP_FEATURES" level="5" />
+			<grant type="Archetype Feature" id="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_ADVANCE_SCOUTING" level="9" />
+			<grant type="Archetype Feature" id="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_DEADLY_VENOM" level="13" />
+			<grant type="Archetype Feature" id="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_ONSLAUGHT" level="13" />
+		</rules>
+	</element>
+
+
+<!--_____________________________________________________________________________________________________________________________________________________________-->
+
+
+	<element name="Wyvern Companion" type="Archetype Feature" source="Ralnihr's Reliquary" id="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_WYVERN_MOUNT">
+		<description>
+			<p>At 1st level, as an action, you can magically summon the Wyvern Companion that is bound to you from the Wyvern Companion stat block, which uses your proficiency bonus (PB) and natural weapon damage (NWD) from the Cavalier table in several places. It appears in an unoccupied space of your choice within 30 feet of you.</p>
+			<p class="indent">The mount remains until it is reduced to 0 hit points, until you use this feature to summon the mount again, or until you die. Anything the mount was wearing or carrying is left behind when the mount vanishes.</p>
+			<p class="indent">Once you summon the mount, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>As an action, you can magically summon the Wyvern Companion that is bound to you from the Wyvern Companion stat block. It appears in an unoccupied space of your choice within 30 feet of you.</p>
+				<p class="indent">The mount remains until it is reduced to 0 hit points, until you use this feature to summon the mount again, or until you die. Anything the mount was wearing or carrying is left behind when the mount vanishes.</p>
+				<p class="indent">Once you summon the mount, you can't do so again until you finish a long rest.</p>
+			</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Wyvern" supports="Wyvern" default="ID_RR_COMPANION_WYVERN_MOUNT" />
+		</rules>
+	</element>
+
+	<element name="King's Shield" type="Archetype Feature" source="Ralnihr's Reliquary" id="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_KINGS_SHIELD">
+		<description>
+			<p>At 1st level, you gain proficiency in shields.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+		</rules>
+	</element>
+
+	<element name="Looming Figure" type="Archetype Feature" source="Ralnihr's Reliquary" id="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_LOOMING_FIGURE">
+		<description>
+			<p>At 1st level, you can add your wyvern's Strength modifier to your Intimidation checks. You gain proficiency in the Intimidation skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INTIMIDATION" />
+			<stat name="intimidation:misc" value="companion:strength:modifier" bonus="feature" /> <!--Either this is broken, or the level 1 feature that sets it's intelligence-->
+		</rules>
+	</element>
+
+	<element name="Sharp Features" type="Archetype Feature" source="Ralnihr's Reliquary" id="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_SHARP_FEATURES">
+		<description>
+			<p>At 5th level, it's bite attack now does 2d6+4 piercing damage.</p>
+			<p class="indent">At 9th level, it gains the Claws attack that is +7 to hit, reach 5 feet, 2d8+4 slashing damage.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Advance Scouting" type="Archetype Feature" source="Ralnihr's Reliquary" id="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_ADVANCE_SCOUTING">
+		<description>
+			<p>At 9th level, you gain proficiency in the Survival skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</p>
+			<p class="indent">You are skilled at scouting the geography around you, and you can always recall the general layout of terrain, settlements, and other features around you. In addition, you can find food and fresh water for yourself and up to five other people each day, provided that the land offers berries, small game, water, and so forth.</p>
+		</description>
+		<sheet>
+			<description>You are skilled at scouting the geography around you, and you can always recall the general layout of terrain, settlements, and other features around you. In addition, you can find food and fresh water for yourself and up to five other people each day, provided that the land offers berries, small game, water, and so forth.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_SURVIVAL" />
+		</rules>
+	</element>
+
+	<element name="Deadly Venom" type="Archetype Feature" source="Ralnihr's Reliquary" id="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_DEADLY_VENOM">
+		<description>
+			<p>At 13th level, your wyvern is fully matured. It gains the Stinger attack that is +7 to hit, reach 10 feet, 2d6+4 piercing damage. On a hit, the target must make a DC 15 Constitution saving throw, taking 7d6 poison damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Onslaught" type="Archetype Feature" source="Ralnihr's Reliquary" id="ID_RR_ARCHETYPE_FEATURE_CAVALRY_WING_ONSLAUGHT">
+		<description>
+			<p>At 13th level, your wyvern is able to use it's multiattack action to make one attack with its bite and one with its claws.</p>
+			<p class="indent">At 18th level, when your wyvern takes the attack action it can make an attack with all of his natural weapons at once. On its multiattack action, the wyvern can make one claw attack, one bite attack, and one stinger attack, in any order. Your Wyvern Companion can use this feature a number of times equal to your proficiency bonus, and it regains all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+
+<!--_____________________________________________________________________________________________________________________________________________________________-->
+
+
+	<!-- Companion Element -->
+	<element name="Wyvern" type="Companion" source="Ralnihr's Reliquary" id="ID_RR_COMPANION_WYVERN_MOUNT">
+		<supports>Wyvern</supports>
+		<description>
+			<p>A Wyvern has two scaly legs, leathery wings, and a sinewy tail topped with its most potent weapon: a poison Stinger. The poison in a wyvern's Stinger can kill a creature in seconds. Extremely potent, Wyvern poison burns through its victim's bloodstream, disintegrating veins and arteries on its way to the heart. As deadly as wyverns can be, however, hunters and Adventurers often track them to claim the venom, which is used in alchemical compounds and to coat Weapons.</p>
+			<p class="indent">This statblock uses your <b>Proficiency Bonus (PB)</b> and <b>Natural Weapon Damage (NWD)</b> from the Cavalier table in several places.</p>
+		</description>
+		<setters>
+			<set name="strength">19</set>
+			<set name="dexterity">10</set>
+			<set name="constitution">16</set>
+			<set name="intelligence">6</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">6</set>
+			<set name="ac">14 + PB (natural armor)</set>
+			<set name="hp">13 + seven times your cavalier level (the mount has a number of hit dice [d10s] equal to your cavalier level)</set>
+			<set name="speed">20 ft., fly 80 ft.</set>
+			<set name="immunities"></set>
+			<set name="conditionImmunities"></set>
+			<set name="saves"></set>
+			<set name="skills"></set>
+			<set name="senses">darkvision 60 ft., passive Perception 14</set>
+			<set name="languages">Draconic</set>
+			<set name="type">Dragon</set>
+			<set name="size">Large</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">{{level:Cavalier}}</set>
+			<set name="traits">ID_RR_COMPANION_TRAIT_SHOCK_AND_AWE,ID_RR_COMPANION_TRAIT_EVASION</set>
+			<set name="actions">ID_RR_COMPANION_ACTION_WYVERN_MULTIATTACK,ID_RR_COMPANION_ACTION_WYVERN_BITE,ID_RR_COMPANION_ACTION_WYVERN_CLAWS,ID_RR_COMPANION_ACTION_WYVERN_STINGER</set>
+			<set name="reactions">ID_RR_COMPANION_TRAIT_SPLIT_SECOND_DODGE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="14" bonus="base" />
+			<stat name="companion:ac" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:hp:max" value="13" />
+			<stat name="companion:hp:max" value="level:Cavalier" />
+			<stat name="companion:hp:max" value="level:Cavalier" />
+			<stat name="companion:hp:max" value="level:Cavalier" />
+			<stat name="companion:hp:max" value="level:Cavalier" />
+			<stat name="companion:hp:max" value="level:Cavalier" />
+			<stat name="companion:hp:max" value="level:Cavalier" />
+			<stat name="companion:hp:max" value="level:Cavalier" />
+			<stat name="companion:speed" value="20" bonus="base" />
+			<stat name="companion:speed:fly" value="80" bonus="base"/>
+			<stat name="companion:proficiency" value="proficiency" bonus="base" />
+			<stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="proficiency" />		
+			<!--<stat name="companion:strength:save:proficiency" value="companion:proficiency" bonus="proficiency" />-->
+			<!--<select type="Class Feature" name="Skills Proficiency (Wyvern)" number="2" supports="Wyvern Skill" />-->
+		</rules>
+	</element>
+
+
+
+	<!-- Companion Saves Elements
+	<element name="Wisdom" type="Class Feature" source="Ralnihr's Reliquary" id="ID_RR_CLASS_FEATURE_SAVING_THROW_PROFICIENCY_WISDOM">
+		<description>
+			<p>Wyvern gains proficiency with Wisdom saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="proficiency" />			
+		</rules>
+	</element>
+	<element name="Constitution" type="Class Feature" source="Ralnihr's Reliquary" id="ID_RR_CLASS_FEATURE_SAVING_THROW_PROFICIENCY_CONSTITUTION">
+		<description>
+			<p>Wyvern gains proficiency with Constitution saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="proficiency" />			
+		</rules>
+	</element> -->
+
+	<!-- Companion Skills Elements
+	<element name="Athletics" type="Class Feature" source="Ralnihr's Reliquary" id="ID_RR_CLASS_FEATURE_SKILL_PROFICIENCY_ATHLETICS">
+		<supports>Wyvern Skill</supports>
+		<description>
+			<p>Wyvern gains proficiency with Athletics saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="companion:athletics:proficiency" value="companion:proficiency" bonus="proficiency" />			
+		</rules>
+	</element>
+	<element name="Intimidation" type="Class Feature" source="Ralnihr's Reliquary" id="ID_RR_CLASS_FEATURE_SKILL_PROFICIENCY_INTIMIDATION">
+		<supports>Wyvern Skill</supports>
+		<description>
+			<p>Wyvern gains proficiency with Intimidation saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="companion:intimidation:proficiency" value="companion:proficiency" bonus="proficiency" />			
+		</rules>
+	</element> -->
+
+
+
+	<element name="Shock and Awe" type="Companion Trait" source="Ralnihr's Reliquary" id="ID_RR_COMPANION_TRAIT_SHOCK_AND_AWE">
+		<description>
+			<p>Starting at 3rd level, whenever you or your mount deals damage to a creature, it can't take reactions until the end of your next turn.</p>
+			<p class="indent">Your mount becomes more resilient. When your mount moves, the next time it would receive damage until the start of its next turn is reduced by 5. This reduction increases when you reach certain cavalier levels, as shown in the Cavalier table.</p>
+		</description>
+		<sheet>
+			<description level="3">Starting at 3rd level, whenever this creature deals damage to a creature, it can't take reactions until the end of your next turn. When your mount moves, the next time it would receive damage until the start of its next turn is reduced by 5. This reduction increases when you reach certain cavalier levels, as shown in the Cavalier table.</description>
+		</sheet>
+	</element>
+
+	<element name="Evasion" type="Companion Trait" source="Ralnihr's Reliquary" id="ID_RR_COMPANION_TRAIT_EVASION">
+		<description>
+			<p>Beginning at 7th level, you and your mount can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an Ice Storm spell. If you are mounted, when you and/or your mount are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+		</description>
+		<sheet>
+			<description level="7">Beginning at 7th level, if you are mounted and this creature is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.</description>
+		</sheet>
+	</element>
+
+	<element name="Resilience Training" type="Companion Trait" source="Ralnihr's Reliquary" id="ID_RR_COMPANION_TRAIT_RESILIENCE_TRAINING">
+		<description>
+			<p>At 17th level, while your mount can see you, it has advantage on all saving throws. In addition, as long you and your wyvern can see each other, you are both immune to the frightened and charmed conditions.</p>
+		</description>
+		<sheet>
+			<description level="17">At 17th level, while your mount can see you, it has advantage on all saving throws. As long you and your wyvern can see each other, you are both immune to the frightened and charmed conditions.</description>
+		</sheet>
+	</element>
+
+
+
+
+	<element name="Multiattack" type="Companion Action" source="Ralnihr's Reliquary" id="ID_RR_COMPANION_ACTION_WYVERN_MULTIATTACK">
+		<description>
+			<p>At 13th level, your wyvern is able to use it's multiattack action to make one attack with its bite and one with its claws.</p>
+			<p class="indent">At 18th level, when your wyvern takes the attack action it can make an attack with all of his natural weapons at once. On its multiattack action, the wyvern can make one claw attack, one bite attack, and one stinger attack, in any order. Your Wyvern Companion can use this feature a number of times equal to your proficiency bonus, and it regains all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description level="13">
+				<p>At 13th level, your wyvern is able to use it's multiattack action to make one attack with its bite and one with its claws.</p>
+				<p class="indent">At 18th level, when your wyvern takes the attack action it can make an attack with all of his natural weapons at once. On its multiattack action, the wyvern can make one claw attack, one bite attack, and one stinger attack, in any order.</p>
+				<p class="indent">Your Wyvern Companion can use this feature a number of times equal to your proficiency bonus, and it regains all expended uses when you finish a long rest.</p>
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Bite" type="Companion Action" source="Ralnihr's Reliquary" id="ID_RR_COMPANION_ACTION_WYVERN_BITE">
+		<description>
+			<p>Melee Weapon Attack: +4 plus PB to hit, reach 10 ft., one target. Hit: 1d8 + 4 piercing damage. At 5th level in Cavalier, this attack increases to 2d6+4 piercing damage on hit.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 plus PB to hit, reach 10 ft., one target. Hit: 1d8 + 4 piercing damage. At 5th level in Cavalier, this attack increases to 2d6+4 piercing damage on hit.</description>
+		</sheet>
+	</element>
+
+	<element name="Claws" type="Companion Action" source="Ralnihr's Reliquary" id="ID_RR_COMPANION_ACTION_WYVERN_CLAWS">
+		<description>
+			<p>Melee Weapon Attack: +4 plus PB to hit, reach 5 ft., one target. Hit: 2d8 + 4 slashing damage. The Wyvern cannot use this attack until you reach 9th level in Cavalier.</p>
+		</description>
+		<sheet>
+			<description level="9">Melee Weapon Attack: +4 plus PB to hit, reach 5 ft., one target. Hit: 2d8 + 4 slashing damage. The Wyvern cannot use this attack until you reach 9th level in Cavalier.</description>
+		</sheet>
+	</element>
+
+	<element name="Stinger" type="Companion Action" source="Ralnihr's Reliquary" id="ID_RR_COMPANION_ACTION_WYVERN_STINGER">
+		<description>
+			<p>Stinger. Melee Weapon Attack: +4 plus PB to hit, reach 10 ft., one target. Hit: 2d6+4 piercing damage. On a hit, the target must make a DC 12 + your proficiency bonus Constitution saving throw, taking 7d6 poison damage on a failed save, or half as much damage on a successful one. The Wyvern cannot use this attack until you reach 13th level in Cavalier.</p>
+		</description>
+		<sheet>
+			<description level="13">Stinger. Melee Weapon Attack: +4 plus PB to hit, reach 10 ft., one target. Hit: 2d6+4 piercing damage. On a hit, the target must make a DC 12 + your proficiency bonus Constitution saving throw, taking 7d6 poison damage on a failed save, or half as much damage on a successful one. The Wyvern cannot use this attack until you reach 13th level in Cavalier.</description>
+		</sheet> 
+	</element>
+
+
+
+	<element name="Split Second Dodge" type="Companion Reaction" source="Ralnihr's Reliquary" id="ID_RR_COMPANION_TRAIT_SPLIT_SECOND_DODGE">
+		<description>
+			<p>Starting at 14th level, whenever an attacker that your mount can see hits it with an attack, it can use its reaction to halve the attack's damage against it.</p>
+		</description>
+		<sheet>
+			<description level="14">Starting at 14th level, whenever an attacker that this creature can see hits it with an attack, it can use its reaction to halve the attack's damage against it.</description>
+		</sheet>
+	</element>
+
+
+<!--_____________________________________________________________________________________________________________________________________________________________-->
+
+
+	<!-- Fighting Styles -->
+	<element name="Archery" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY">
+		<supports>Fighting Style, Fighter, Ranger</supports>
+		<description>
+			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+		</description>
+		<sheet>
+			<description>You gain a +2 bonus to attack rolls you make with ranged weapons.</description>
+		</sheet>
+		<rules>
+			<stat name="ranged:attack" value="2" />
+		</rules>
+	</element>
+	<element name="Defense" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<description>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing armor, you gain a +1 bonus to AC.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" bonus="fighting style" equipped="[armor:any]" alt="Defense (Fighting Style)" />
+		</rules>
+	</element>
+	<element name="Dueling" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<description>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+		</description>
+		<sheet>
+			<description>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</description>
+		</sheet>
+		<rules>
+			<!-- <stat name="melee:damage" value="2" equipped="[primary:any],([secondary:none]||[shield:any])" /> -->
+		</rules>
+	</element>
+	<element name="Great Weapon Fighting" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+		<supports>Fighting Style, Fighter, Paladin</supports>
+		<description>
+			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+		</description>
+		<sheet>
+			<description>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</description>
+		</sheet>
+	</element>
+	<element name="Protection" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION">
+		<supports>Fighting Style, Fighter, Paladin</supports>
+		<description>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</description>
+		</sheet>
+	</element>
+	<element name="Two-Weapon Fighting" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+		<supports>Fighting Style, Fighter, Ranger</supports>
+		<description>
+			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+		</description>
+		<sheet>
+			<description>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Fighting Style Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_FIGHTING_STYLE" />
+</elements>
